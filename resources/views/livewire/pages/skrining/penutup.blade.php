@@ -68,15 +68,45 @@ new #[Layout('layouts.skrining')] class extends Component {
 
         <!-- Kontak -->
         <div class="mb-8">
-            <p class="text-sm font-bold text-indigo-900 mb-2">Kontak Abasa HR Consulting:</p>
-            <a href="https://wa.me/6282121919296" target="_blank"
-                class="text-indigo-500 font-semibold text-sm underline block mb-1">
-                +62 821-2191-9296
-            </a>
-            <p class="text-sm font-bold text-slate-700 mb-1">ABASA SPACE</p>
-            <p class="text-sm text-slate-500 leading-relaxed">
-                Jl. Ciremai Raya Blok AB.2 No.7 RT.04/07 Komp. SBS-Harapan Jaya | Bekasi Utara 17124
-            </p>
+            <p class="text-sm font-bold text-indigo-900 mb-4">Kontak Abasa HR Consulting:</p>
+            <div class="space-y-4">
+                
+                <!-- WhatsApp -->
+                <a href="https://wa.me/6282121919296" target="_blank" class="flex items-center gap-3 group">
+                    <div class="w-10 h-10 rounded-full bg-green-50 flex items-center justify-center shrink-0 group-hover:bg-green-100 transition-colors">
+                        <i class="fa-brands fa-whatsapp text-green-600 text-lg"></i>
+                    </div>
+                    <div>
+                        <p class="text-xs text-slate-400 mb-0.5">WhatsApp</p>
+                        <p class="text-sm font-semibold text-slate-700 group-hover:text-green-600 transition-colors">+62 821-2191-9296</p>
+                    </div>
+                </a>
+
+                <!-- Instagram -->
+                <a href="https://www.instagram.com/abasa.hrconsulting/" target="_blank" class="flex items-center gap-3 group">
+                    <div class="w-10 h-10 rounded-full bg-pink-50 flex items-center justify-center shrink-0 group-hover:bg-pink-100 transition-colors">
+                        <i class="fa-brands fa-instagram text-pink-600 text-lg"></i>
+                    </div>
+                    <div>
+                        <p class="text-xs text-slate-400 mb-0.5">Instagram</p>
+                        <p class="text-sm font-semibold text-slate-700 group-hover:text-pink-600 transition-colors">abasa.hrconsulting</p>
+                    </div>
+                </a>
+
+                <!-- Location -->
+                <div class="flex items-start gap-3">
+                    <div class="w-10 h-10 rounded-full bg-indigo-50 flex items-center justify-center shrink-0">
+                        <i class="fa-solid fa-location-dot text-indigo-500 text-lg"></i>
+                    </div>
+                    <div>
+                        <p class="text-xs text-slate-400 mb-0.5">ABASA SPACE</p>
+                        <p class="text-sm font-semibold text-slate-700 leading-relaxed">
+                            Jl. Ciremai Raya Blok AB.2 No.7 RT.04/07 Komp. SBS-Harapan Jaya | Bekasi Utara 17124
+                        </p>
+                    </div>
+                </div>
+
+            </div>
         </div>
 
         <a href="{{ route('skrining.welcome', ['event' => $event->id]) }}" 

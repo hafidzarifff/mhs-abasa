@@ -65,8 +65,7 @@ new #[Layout('layouts.skrining')] class extends Component {
 
     <!-- Header -->
     <div class="flex items-center gap-2 mb-6">
-        <img src="{{ asset('images/abasa-hr-logo.svg') }}" alt="Abasa HR Consulting" class="h-6 w-auto">
-        <span class="text-sm font-semibold text-indigo-900">Abasa HR Consulting</span>
+        <img src="{{ asset('images/abasa-hr-logo.svg') }}" alt="Abasa HR Consulting" class="h-8 w-auto">
     </div>
 
     <!-- Progress Bar -->
@@ -180,7 +179,7 @@ new #[Layout('layouts.skrining')] class extends Component {
             </div>
             <div>
                 <p class="text-sm font-bold text-indigo-900">Verifikasi Follower</p>
-                <p class="text-xs text-slate-400 leading-relaxed">Apakah Anda sudah mengikuti Instagram @abasa.hrconsulting?</p>
+                <p class="text-xs text-slate-400 leading-relaxed">Apakah Anda sudah mengikuti Instagram <a href="https://www.instagram.com/abasa.hrconsulting/" target="_blank" class="font-semibold text-indigo-600 underline">@abasa.hrconsulting</a>?</p>
             </div>
         </div>
 

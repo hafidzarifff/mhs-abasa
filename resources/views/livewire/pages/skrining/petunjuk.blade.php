@@ -29,8 +29,7 @@ new #[Layout('layouts.skrining')] class extends Component {
     <!-- Header -->
     <div class="flex items-center justify-between mb-6">
         <div class="flex items-center gap-2">
-            <img src="{{ asset('images/abasa-hr-logo.svg') }}" alt="Abasa HR Consulting" class="h-6 w-auto">
-            <span class="text-sm font-semibold text-indigo-900">Abasa HR Consulting</span>
+            <img src="{{ asset('images/abasa-hr-logo.svg') }}" alt="Abasa HR Consulting" class="h-8 w-auto">
         </div>
     </div>
 
